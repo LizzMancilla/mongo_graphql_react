@@ -3,12 +3,15 @@
 ## To setup ...
 
 1. Clone current repo to your local
+
 `git clone https://github.com/LizzMancilla/mongo_graphql_react.git`
 
 2. Go to docker-compose parent folder
+
 `cd mongo_graphql_react`
 
 3. Execute following command
+
 `docker-compose up -d`
 
 ## To test ...
