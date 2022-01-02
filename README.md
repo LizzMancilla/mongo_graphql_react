@@ -90,3 +90,5 @@ mutation{
 ```
 
 #### 5b. Refresh *Front UI* and it should shows just initial products without test product
+
+#### Don't forget to execute `docker-compose down`
