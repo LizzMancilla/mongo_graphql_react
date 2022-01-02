@@ -26,8 +26,8 @@ services:
     links:
     - mongodb
 
-  front-app:
-    build: ./front-app
+  front_app:
+    build: ./front_app
     volumes:
     - ./graphql/images:/tmp/images/
     ports:
