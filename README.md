@@ -35,9 +35,11 @@ Front UI: http://localhost:3000/
   }
 }
 ```
-It will shows default products
+It will shows default productsg
+<img src="https://user-images.githubusercontent.com/51000492/147873485-f657c9c6-2f55-4a92-84bf-1577035b6dce.png" width="80%" height="80%">
 
 #### 2b. Now, *Front UI* should shows a table with same data as Graphql UI
+<img src="https://user-images.githubusercontent.com/51000492/147873565-7cb92b85-d505-4a8b-ad7d-52a4eb2e0624.png" width="75%" height="75%">
 
 #### 3a. Lets add a new product, execute this mutation in *Graphql UI*
 ```graphql
@@ -54,6 +56,7 @@ mutation{
 ```
 
 #### 3b. Refresh *Front UI* and it should show a new row that contains test product data
+<img src="https://user-images.githubusercontent.com/51000492/147873588-5e59daba-0c17-4731-aa24-d2e002d7cafd.png" width="75%" height="75%">
 
 #### 4a. Lets modify test product, execute this mutation in *Graphql UI*
 ```graphql
@@ -70,6 +73,7 @@ mutation{
 ```
 
 #### 4b. Refresh *Front UI* and it should show test product with new values
+<img src="https://user-images.githubusercontent.com/51000492/147873633-2fb99693-a950-40ba-9acf-c091c2dd7ccf.png" width="75%" height="75%">
 
 #### 5a. Finally, lets delete test product, execute this mutation in *Graphql UI*
 ```graphql
