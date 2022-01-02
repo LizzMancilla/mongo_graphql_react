@@ -1,0 +1,38 @@
+version: "3.8"
+services:
+  mongodb:
+    image : mongo
+    container_name: mongodb
+    volumes:
+    - ./mongodb/database:/data/db
+    ports:
+    - "27017:27017"
+
+  mongo_seed:
+    build: ./mongo_seed
+    depends_on:
+    - mongodb
+    links:
+    - mongodb
+
+  graphql:
+    build: .
+    volumes:
+    - ./graphql/images:/images
+    ports:
+    - "4000:4000"
+    depends_on:
+    - mongodb
+    links:
+    - mongodb
+
+  front-app:
+    build: ./front-app
+    volumes:
+    - ./graphql/images:/tmp/images/
+    ports:
+    - "3000:3000"
+    depends_on:
+    - graphql
+    links:
+    - graphql
