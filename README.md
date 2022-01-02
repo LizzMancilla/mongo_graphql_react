@@ -16,7 +16,7 @@
 
 ## To test ...
 
-#### First, open in your browser
+#### First, open in your browser. (It can takes some minutes until it shows information)
 
 Graphql UI: http://localhost:4000/graphql
 
