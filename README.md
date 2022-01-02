@@ -13,14 +13,13 @@
 
 ## To test ...
 
-1. Open in your browser
+First, open in your browser
 
 Graphql UI: http://localhost:4000/graphql
 
 Front UI: http://localhost:3000/
 
-2.
-a. In *Graphql UI* execute this query
+2a. In *Graphql UI* execute this query
 ```graphql
 {
   products{
@@ -35,10 +34,9 @@ a. In *Graphql UI* execute this query
 ```
 It will shows default products
 
-b. Now, *Front UI* should shows a table with same data as Graphql UI
+2b. Now, *Front UI* should shows a table with same data as Graphql UI
 
-3.
-a. Lets add a new product, execute this mutation in *Graphql UI*
+3a. Lets add a new product, execute this mutation in *Graphql UI*
 ```graphql
 mutation{
   addProduct(code:"test",image:"google.png",image_url:"https://www.google.com/images/srpr/logo3w.png",quantity:100,price:99,description:"Test product"){
@@ -52,7 +50,7 @@ mutation{
 }
 ```
 
-b. Refresh *Front UI* and it should show a new row that contains test product data
+3b. Refresh *Front UI* and it should show a new row that contains test product data
 
 4.
 a. Lets modify test product, execute this mutation in *Graphql UI*
